@@ -159,6 +159,37 @@ parseFloat('10') // tranforma o texto '10' no valor decimal (com ponto flutuante
 "olá, mundo".replace("olá", "adeus") // retorna 'adeus, mundo'
 "olá".toUpperCase() // retorna OLÁ
 </code></pre>
+
+<h2 id="strings"><a name="user-content-strings" href="#strings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Templates Strings</h2>
+                            <p>As template strings em JavaScript, também conhecidas como template literals, são uma forma de criar strings de texto que permitem incorporar expressões JavaScript em seu conteúdo. Eles foram introduzidos no ES6 (também conhecido como ECMAScript 2015) e são uma maneira mais conveniente e legível de criar strings complexas em comparação com as strings padrão de JavaScript.</p>
+                            <p>Para criar uma template string, você usa a sintaxe de crase (``) em vez de aspas simples ou duplas. Dentro de uma template string, você pode usar a sintaxe ${} para incorporar expressões JavaScript.</p>
+                            <p>Por exemplo, você pode criar uma template string para exibir uma mensagem de saudação personalizada com base no nome de usuário fornecido:</p>
+
+                            <pre><code>const userName = 'John';
+const greeting = `Olá, ${userName}! Bem-vindo de volta.`;
+console.log(greeting); // Saída: Olá, John! Bem-vindo de volta.
+</code></pre>
+
+                            <p>Observe como usamos a sintaxe ${} para incorporar a variável userName na string de saudação. Ao usar uma template string, podemos facilmente criar strings mais complexas sem precisar concatenar várias strings e variáveis.</p>
+                            <p>Além disso, as template strings também oferecem suporte a várias linhas, permitindo que você crie strings de várias linhas sem precisar usar caracteres de escape ou concatenar várias strings. Aqui está um exemplo:</p>
+
+                            <pre><code>const multiLineString = `
+Esta é uma string
+de várias linhas
+que pode ser facilmente criada
+usando uma template string
+`;
+console.log(multiLineString);
+// Saída:
+// Esta é uma string
+// de várias linhas
+// que pode ser facilmente criada
+// usando uma template string
+</code></pre>
+
+                            <p>As template strings em JavaScript são uma adição útil à linguagem, permitindo que os desenvolvedores criem strings complexas com mais facilidade e legibilidade. Com a sintaxe de crase e a incorporação de expressões JavaScript, você pode criar strings personalizadas com facilidade.</p>
+
+
                             <h2 id="operadores-de-comparacao"><a name="user-content-operadores-de-comparacao" href="#operadores-de-comparacao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Operadores de comparação</h2>
                             <p>JavaScript nos disponibiliza alguns operadores lógicos de comparação:</p>
                             <pre><code>==   // Igual a
