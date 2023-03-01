@@ -18,6 +18,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">    
+    
+    <script>hljs.highlightAll();</script>
+    
 </head>
 
 <body>
@@ -81,8 +87,9 @@ Object: Objetos
                             <h2 id="operacoes-matematicas-"><a name="user-content-operacoes-matematicas-" href="#operacoes-matematicas-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Operações matemáticas <em>(+, -, *, /, %)</em></h2>
                             <p>Os operadores numéricos padrões são suportados, incluindo adição, subtração, módulo (ou resto) aritmético e assim por diante.</p>
                             <h3 id="adicao"><a name="user-content-adicao" href="#adicao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Adição (+)</h3>
-                            <p>A operação de adição envolve dois operandos e resulta na diferença entre o primeiro e o segundo operando identificados. Ex:</p>
-                            <pre><code>// Number + Number -&gt; Adição
+                            <p>A operação de adição envolve dois operandos e resulta na diferença entre o primeiro e o segundo operando identificados. Ex:</p>                            
+                            <pre>
+                              <code class="language-javascript hljs">// Number + Number -&gt; Adição
 1 + 2 // 3
 
 // Boolean + Number -&gt; Adição
@@ -102,13 +109,16 @@ false + false // 0
 </code></pre>
                             <h3 id="subtracao-"><a name="user-content-subtracao-" href="#subtracao-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtração (-)</h3>
                             <p>A operação de subtração envolve dois operandos e resulta na diferença entre o primeiro e o segundo operando identificados. Ex:</p>
-                            <pre><code>5 - 3 // 2
+                            <pre><code>
+5 - 3 // 2
 3 - 5 // -2
 "texto" - 3 // NaN (Not a Number: não é um número)
 </code></pre>
                             <h3 id="divisao"><a name="user-content-divisao" href="#divisao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Divisão (/)</h3>
                             <p>O operador de divisão produz o quociente de seus operandos, onde o operando da esquerda é o dividendo e o da direita é o divisor. Ex:</p>
-                            <pre><code>1 / 2      // retorna 0.5 em JavaScript
+                            <pre><code class="language-javascript hljs">
+
+                              1 / 2      // retorna 0.5 em JavaScript
 1 / 2      // retorna 0 em Java
 // (nenhum dos números é explicitamente um número de ponto flutuante)
 
@@ -202,7 +212,7 @@ console.log(multiLineString);
 &lt;=   // Menor ou igual a
 </code></pre>
                             <h2 id="variaveis-e-atribuicao-de-valores"><a name="user-content-variaveis-e-atribuicao-de-valores" href="#variaveis-e-atribuicao-de-valores" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Variáveis e atribuição de valores</h2>
-                            <p>Em JavaScript, as variáveis são declaradas por meio da palavra chave var. Vale ressaltar que JavaScript é uma linguagem de tipagem dinâmica e, diferente de outras linguagens, não há a necessidade de se explicitar o tipo de cada variável no momento da sua declaração. O tipo da variável é definido implicitamente pelo seu valor. Ex:</p>
+                            <p>Em JavaScript, as variáveis podem ser declaradas por meio da palavra chave <strong>var</strong> ou <strong>let</strong>. Vale ressaltar que JavaScript é uma linguagem de tipagem dinâmica e, diferente de outras linguagens, não há a necessidade de se explicitar o tipo de cada variável no momento da sua declaração. O tipo da variável é definido implicitamente pelo seu valor. Vejamos um exemplo com <strong>var</strong>:</p>
                             <pre><code>var a;
 var curso = 'Informática para Internet';
 var phi = 1.618;
@@ -222,6 +232,51 @@ x = 10;
                             <pre><code>var x = 2;
 var y = 3;
 </code></pre>
+
+                            <h3>Declaração de variáveis com let</h3>
+
+                            <p>As declarações de variáveis com <strong>let</strong> são uma forma de criar variáveis que podem ser reatribuídas e têm escopo de bloco. Isso significa que as variáveis declaradas com let só são acessíveis dentro do bloco em que foram declaradas.</p>
+                            <p>A principal vantagem de usar declarações de variáveis com let é que elas permitem que você escreva código mais seguro e claro, evitando possíveis problemas que podem ocorrer com variáveis globais ou com escopo de função. Isso porque as variáveis declaradas com let são restritas ao bloco em que foram declaradas, evitando conflitos de nomes de variáveis e garantindo que as variáveis não sejam modificadas acidentalmente em outras partes do código.</p>
+                            <p>Outra vantagem de usar declarações de variáveis com let é que elas permitem que você crie variáveis que podem ser reatribuídas, tornando mais fácil escrever código que precisa modificar o valor de uma variável ao longo do tempo.</p>
+                            <p>Por exemplo, você pode criar uma variável com let para armazenar a pontuação de um jogo e atualizá-la conforme o jogador marca pontos:</p>
+
+                            <pre>
+                              <code>let pontuacao = 0;
+pontuacao += 10; // adiciona 10 pontos à pontuação
+pontuacao += 5; // adiciona mais 5 pontos à pontuação</code>
+                            </pre>
+
+                            <p>Observe como podemos reatribuir o valor da variável score usando o operador de atribuição (+=) várias vezes, permitindo que atualizemos o valor da variável ao longo do tempo.</p>
+                            <p>Em resumo, usar declarações de variáveis com let é uma prática recomendada em JavaScript porque elas permitem que você escreva código mais seguro e claro, evitando possíveis problemas com variáveis globais ou com escopo de função e tornando mais fácil criar variáveis que podem ser reatribuídas.</p>
+
+                            <h3>Diferenças entre var e let</h3>
+
+                            <p>A principal diferença entre var e let é que as variáveis declaradas com var têm escopo de função ou global, enquanto as variáveis declaradas com let têm escopo de bloco. Isso significa que as variáveis declaradas com let só são acessíveis dentro do bloco em que foram declaradas, enquanto as variáveis declaradas com var são acessíveis em todo o escopo da função ou do script. Por exemplo, considere o seguinte código:</p>
+
+                            <pre>
+                              <code>function testVar() {
+  var x = 1;
+  if (true) {
+    var x = 2;
+    console.log(x); // 2
+  }
+  console.log(x); // 2
+}
+
+function testLet() {
+  let y = 1;
+  if (true) {
+    let y = 2;
+    console.log(y); // 2
+  }
+  console.log(y); // 1
+}</code>
+                            </pre>
+                            <p>No primeiro exemplo, usamos a palavra-chave var para declarar a variável x. Como var tem escopo de função, a variável x pode ser acessada dentro de toda a função testVar. O valor da variável é alterado dentro do bloco if e também é refletido fora dele, pois a variável está no mesmo escopo de função.</p>
+                            <p>Já no segundo exemplo, usamos a palavra-chave let para declarar a variável y. Como let tem escopo de bloco, a variável y só é acessível dentro do bloco if em que foi declarada. O valor da variável é alterado dentro do bloco if, mas o valor original da variável y (1) é mantido fora do bloco.</p>
+                            <p>Em resumo, a principal diferença entre var e let é que as variáveis declaradas com var têm escopo de função ou global, enquanto as variáveis declaradas com let têm escopo de bloco. Por isso, <strong>é recomendável usar let para criar variáveis em blocos específicos do seu código, evitando possíveis conflitos de nomes e criando um código mais seguro e claro.</strong></p>
+
+
                             <h2 id="comandos-de-entrada-e-saida"><a name="user-content-comandos-de-entrada-e-saida" href="#comandos-de-entrada-e-saida" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Comandos de entrada e saída</h2>
                             <p>Conforme mencionado no início deste material, a linguagem JavaScript não possui o conceito de entrada e saída. A entrada e saída de dados compete, na verdade, ao mecanismo hospedeiro (Navegador Web, por exemplo). </p>
                             <p>A seguir, listamos alguns dos mecanismos disponibilizados pelos navegadores web mais conhecidos:</p>
@@ -635,6 +690,8 @@ Alert(x); // não funciona
         btn.addEventListener('click', btnClick);
     }
     </script>
+
+    
 </body>
 
 </html>
