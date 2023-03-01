@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Falleiros | IFMS</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">Javascript - Introdução</a>
+                </li>
+                <li>
+                    <a href="#exercicios">Exercícios</a>
+                </li>
+                <li>
+                    <a href="#arquivos">Arquivos</a>
+                </li>
+                <li>
+                    <a href="#avaliacoes">Avaliações</a>
+                </li>
+                <li>
+                    <a href="#leitura">Leitura</a>
+                </li>
+                <li>
+                    <a href="#trabalhos">Trabalhos</a>
+                </li>
+                <li>
+                    <a href="#notas">Notas</a>
+                </li>
+
+
+                <!-- <li>
+                    <a href="#datas">Datas</a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default glyphicon glyphicon-menu-hamburger" id="menu-toggle"></a>
+                        <article class="markdown-body">
+                            <h1 id="javascript"><a name="user-content-introducao-a-linguagem-javascript" href="#introducao-a-linguagem-javascript" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introdução à linguagem JavaScript</h1>
+                            <p><em>Disciplina: Fundamentos de Lógica e Programação de Computadores</em></p>
+                            <p><em>Prof. Me. Evandro Luís Souza Falleiros</em>
+                                <br />
+                                <em>Profa. Me. Nátalli Macedo Rodrigues Falleiros</em></p>
+                            <h2 id="o-que-e-javascript"><a name="user-content-o-que-e-javascript" href="#o-que-e-javascript" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>O que é JavaScript</h2>
+                            <p>JavaScript é a linguagem de programação web mais conhecida (e incompreendida) do mundo. Foi criada em 1995 por Brendan Eich, um engenheiro da Netscape, e lançada pela primeira vez com o Netscape 2 no início de 1996.</p>
+                            <p>Foi inicialmente chamada de LiveScript, mas logo foi rebatizada, em uma decisão de marketing malfeita, para tentar crescer sobre a popularidade da linguagem Java da Sun Microsystem - apesar das duas terem muito pouco em comum. Esta tem sido uma fonte de confusão desde então.</p>
+                            <h2 id="onde-javascript-pode-ser-executado"><a name="user-content-onde-javascript-pode-ser-executado" href="#onde-javascript-pode-ser-executado" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Onde JavaScript pode ser executado</h2>
+                            <p>Diferentemente da maioria das linguagens de programação, a linguagem JavaScript não possui o conceito de entrada e saída. Ela é projetada para funcionar como uma linguagem de script em um ambiente de terceiros, e cabe ao ambiente fornecer mecanismos para a comunicação com o mundo exterior. O ambiente de terceiros (hospedeiro) mais comum é o navegador web, mas interpretadores JavaScript também pode ser encontrados no Adobe Acrobat, Photoshop, imagens SVG, bem como em ambientes de servidor, como Node.js. No entanto, a lista aqui apresentada das áreas nas quais a JavaScript é utilizada é apenas o começo.</p>
+                            <h2 id="quais-ferramentas-vamos-utilizar"><a name="user-content-quais-ferramentas-vamos-utilizar" href="#quais-ferramentas-vamos-utilizar" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Quais ferramentas vamos utilizar</h2>
+                            <p>Para iniciar nossos estudos com JavaScript precisamos de poucas ferramentas. Um bom editor de texto e um bom navegador Web são suficientes para que você comece a praticar e programar utilizando JavaScript.</p>
+                            <p><strong>Editor de texto:</strong> <a href="https://www.sublimetext.com/3">Sublime Text 3</a>
+                                <br />
+                                <strong>Navegador Web:</strong> <a href="https://www.google.com.br/chrome/browser/desktop/">Google Chrome</a></p>
+                            <h2 id="tipos-de-dados"><a name="user-content-tipos-de-dados" href="#tipos-de-dados" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tipos de dados</h2>
+                            <p>Vamos começar pelo bloco de construção de qualquer linguagem: os tipos. Programas JavaScript manipulam valores, e esses valores todos pertencem a um tipo. Os principais tipos de dados JavaScript são:</p>
+                            <pre><code>Number: valores numéricos
+String: textos, sequência de caracteres
+Boolean: valores booleanos (verdadeiro e falso)
+Function: funções
+Object: Objetos
+</code></pre>
+                            <p>Existem outros dois tipos que, no momento, parecerão estranhos: &lsquo;indefinido&rsquo; e &lsquo;nulo&rsquo;. Mas, esses dois tipos serão abordados em um outro momento. Existem, também, alguns tipos para erros. Contudo, as coisas são muito mais fáceis se ficarmos com a primeira lista.</p>
+                            <h2 id="operacoes-matematicas-"><a name="user-content-operacoes-matematicas-" href="#operacoes-matematicas-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Operações matemáticas <em>(+, -, *, /, %)</em></h2>
+                            <p>Os operadores numéricos padrões são suportados, incluindo adição, subtração, módulo (ou resto) aritmético e assim por diante.</p>
+                            <h3 id="adicao"><a name="user-content-adicao" href="#adicao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Adição (+)</h3>
+                            <p>A operação de adição envolve dois operandos e resulta na diferença entre o primeiro e o segundo operando identificados. Ex:</p>
+                            <pre><code>// Number + Number -&gt; Adição
+1 + 2 // 3
+
+// Boolean + Number -&gt; Adição
+true + 1 // 2
+
+// Boolean + Boolean -&gt; Adição
+false + false // 0
+
+// Number + String -&gt; Concatenação
+5 + "texto" // "5texto"
+
+// String + Boolean -&gt; Concatenação
+"texto" + false // "textofalse"
+
+// String + String -&gt; Concatenação
+"texto" + " qualquer" // "texto qualquer"
+</code></pre>
+                            <h3 id="subtracao-"><a name="user-content-subtracao-" href="#subtracao-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtração (-)</h3>
+                            <p>A operação de subtração envolve dois operandos e resulta na diferença entre o primeiro e o segundo operando identificados. Ex:</p>
+                            <pre><code>5 - 3 // 2
+3 - 5 // -2
+"texto" - 3 // NaN (Not a Number: não é um número)
+</code></pre>
+                            <h3 id="divisao"><a name="user-content-divisao" href="#divisao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Divisão (/)</h3>
+                            <p>O operador de divisão produz o quociente de seus operandos, onde o operando da esquerda é o dividendo e o da direita é o divisor. Ex:</p>
+                            <pre><code>1 / 2      // retorna 0.5 em JavaScript
+1 / 2      // retorna 0 em Java
+// (nenhum dos números é explicitamente um número de ponto flutuante)
+
+1.0 / 2.0  // retorna 0.5 em JavaScript e Java
+
+2.0 / 0    // retorna Infinity em JavaScript
+2.0 / 0.0  // retorna Infinity também
+2.0 / -0.0 // retorna -Infinity em JavaScript
+</code></pre>
+                            <h3 id="multiplicacao"><a name="user-content-multiplicacao" href="#multiplicacao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Multiplicação (*)</h3>
+                            <p>O operador de multiplicação produz o produto dos operandos. Ex:</p>
+                            <pre><code>2 * 2 // 4
+-2 * 2 // -4
+Infinity * 0 // NaN
+Infinity * Infinity // Infinity
+"texto" * 2 // NaN
+</code></pre>
+                            <h3 id="modulo"><a name="user-content-modulo" href="#modulo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Módulo (%)</h3>
+                            <p>A função módulo é capaz de retornar o resto inteiro da divisão entre dois operandos. Ex:</p>
+                            <pre><code>12 % 5 // 2
+-1 % 2 // -1
+NaN % 2 // NaN
+</code></pre>
+                            <h3 id="operacoes-matematicas-avancadas"><a name="user-content-operacoes-matematicas-avancadas" href="#operacoes-matematicas-avancadas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Operações matemáticas avançadas</h3>
+                            <p>Há também um objeto embutido na linguagem, chamado Math, capaz de manipular funções e constantes matemáticas mais avançadas. Ex:</p>
+                            <pre><code>Math.PI // retorna o valor de PI
+Math.sin(3.5); // seno de 3.5
+Math.cos(3.5); // cosseno de 3.5
+Math.random(); // retorna um valor randômico
+Math.sqrt(25) // retorna o valor referente à raiz quadrada de 25
+</code></pre>
+                            <h2 id="conversoes-parseint-parsefloat"><a name="user-content-conversoes-parseint-parsefloat" href="#conversoes-parseint-parsefloat" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Conversões <em>(parseInt, parseFloat, +)</em></h2>
+                            <p>Em diversas situações de entrada de dados, precisamos converter dados textuais para formatos numéricos. A seguir, alguns exemplos são listados:</p>
+                            <pre><code>parseInt('10') // tranforma o texto '10' no valor inteiro 10
+parseFloat('10') // tranforma o texto '10' no valor decimal (com ponto flutuante) 10
+</code></pre>
+                            <p>Você também pode usar o operador unário + para converter valores em números. Ex:</p>
+                            <pre><code>+'3.1415' // 3.1415 como valor numérico flutuante
+</code></pre>
+                            <h2 id="strings"><a name="user-content-strings" href="#strings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Strings</h2>
+                            <p>Strings, em JavaScript, são sequências de caracteres (texto em geral). A representação de Strings em JavaScript se dá por meio da utilização de aspas simples ou aspas duplas. Ex:</p>
+                            <pre><code>'Texto qualquer' // string com 14 caracteres (espaço conta como um caractere)
+"Texto qualquer" // também é uma string
+'Texto ' + 'qualquer' // concatenação de Strings
+</code></pre>
+                            <p>As Strings são objetos JavaScript que tem diversas funcionalidades implementadas que nos auxiliam a manipular textos. Ex:</p>
+                            <pre><code>"olá".charAt(0) // retorna 'o'
+"olá, mundo".replace("olá", "adeus") // retorna 'adeus, mundo'
+"olá".toUpperCase() // retorna OLÁ
+</code></pre>
+                            <h2 id="operadores-de-comparacao"><a name="user-content-operadores-de-comparacao" href="#operadores-de-comparacao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Operadores de comparação</h2>
+                            <p>JavaScript nos disponibiliza alguns operadores lógicos de comparação:</p>
+                            <pre><code>==   // Igual a
+!=   // Diferente de
+===  // Idêntico a (igual e do mesmo tipo)
+!==  // Não Idêntico a
+&gt;    // Maior que
+&gt;=   // Maior ou igual a
+&lt;    // Menor que
+&lt;=   // Menor ou igual a
+</code></pre>
+                            <h2 id="variaveis-e-atribuicao-de-valores"><a name="user-content-variaveis-e-atribuicao-de-valores" href="#variaveis-e-atribuicao-de-valores" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Variáveis e atribuição de valores</h2>
+                            <p>Em JavaScript, as variáveis são declaradas por meio da palavra chave var. Vale ressaltar que JavaScript é uma linguagem de tipagem dinâmica e, diferente de outras linguagens, não há a necessidade de se explicitar o tipo de cada variável no momento da sua declaração. O tipo da variável é definido implicitamente pelo seu valor. Ex:</p>
+                            <pre><code>var a;
+var curso = 'Informática para Internet';
+var phi = 1.618;
+</code></pre>
+                            <p>Se você declarar uma variável sem atribuir qualquer valor a ela, seu tipo será <strong><em>undefined</em></strong>. </p>
+                            <p>Criando um comparativo com as estruturas trabalhadas com Português Estruturado, temos que</p>
+                            <pre><code>var
+    x: inteiro;
+x ← 10;
+</code></pre>
+                            <p>é equivalente a:</p>
+                            <pre><code>var x;
+x = 10;
+</code></pre>
+                            <p>Vale ressaltar que, em JavaScript, <strong>as variáveis tem tipagem dinâmica</strong>. Dessa forma, não precisamos nos preocupar com os tipos das variáveis, uma vez que o tipo é atribuído automaticamente. Também note que o sinal <strong>←</strong> é substituído por <strong>=</strong>. O sinal de igual (<strong>=</strong>), em JavaScript, representa <strong>atribuição</strong> de dados.</p>
+                            <p>A atribuição de dados também pode ser feita de forma direta, já no momento da declaração da variável:</p>
+                            <pre><code>var x = 2;
+var y = 3;
+</code></pre>
+                            <h2 id="comandos-de-entrada-e-saida"><a name="user-content-comandos-de-entrada-e-saida" href="#comandos-de-entrada-e-saida" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Comandos de entrada e saída</h2>
+                            <p>Conforme mencionado no início deste material, a linguagem JavaScript não possui o conceito de entrada e saída. A entrada e saída de dados compete, na verdade, ao mecanismo hospedeiro (Navegador Web, por exemplo). </p>
+                            <p>A seguir, listamos alguns dos mecanismos disponibilizados pelos navegadores web mais conhecidos:</p>
+                            <pre><code>// Mensagem de alerta no navegador
+alert('Instituto Federal de Mato Grosso do Sul - Campus Dourados');
+
+// Comando híbrido, de entrada e saída de dados
+var nome = prompt('Digite seu nome');
+</code></pre>
+                            <p>Aqui vale ressaltar que o comando <em>prompt</em> tem dupla função, uma vez que mostra uma janela de entrada de dados já com uma mensagem de texto (saída). Como analogia, podemos comparar o comando <em>prompt</em> com uma sequência estruturada em Português Estruturado:</p>
+                            <pre><code>// entrada e saída com Português Estruturado
+escreva('Digite um valor');
+leia(valor);
+
+// entrada e saída com prompt
+valor = prompt('Digite um valor');
+</code></pre>
+                            <p>Um outro comando importante para depuração do código fonte JavaScript é o comando de saída <em>console.log()</em>. Esse comando é capaz de escrever mensagens no <em>console</em> dos Navegadores Web.</p>
+                            <pre><code>valor = prompt('Digite um valor');
+console.log('Valor lido: ' + valor);
+</code></pre>
+                            <h2 id="estrutura-de-decisao"><a name="user-content-estrutura-de-decisao" href="#estrutura-de-decisao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Estrutura de decisão</h2>
+                            <p>Estruturas de decisão nos auxiliam a controlar e decidir a sequência de execução de nossos algoritmos quando consideramos condições específicas. Em JavaScript, uma estrutura de decisão é organizada conforme a seguinte sintaxe:</p>
+                            <pre><code>if (condicao) {
+    // instruções que devem ser executadas
+    // quando a condição é verdadeira (true)
+} else {
+    // instruções que devem ser executadas
+    // quando a condição é falsa (false)
+}
+</code></pre>
+                            <p>Vale ressaltar que o bloco de instruções <em>else</em> é facultativo, dependendo do problema a ser resolvido.</p>
+                            <p>Como exemplo prático e comparativo, vamos trabalhar sobre o seguinte algoritmo:</p>
+                            <blockquote>
+                                <p>Crie um algoritmo para determinar se uma pessoa é maior de idade ou não.
+                                    <br /> Emita uma mensagem de texto informando a situação desta pessoa</p>
+                            </blockquote>
+                            <p><strong> Português Estruturado </strong></p>
+                            <pre><code>algoritmo maiorIdade;
+var
+    idade: inteiro;
+inicio
+    escreva('Digite sua idade');
+
+    se (idade &gt;= 18) então
+        escreva('Maior de idade');
+    senão
+        escreva('Menor de idade');
+    fim-se
+fim
+</code></pre>
+                            <p><strong> JavaScript </strong></p>
+                            <pre><code>var idade = prompt('Digite sua idade')
+if (idade &gt;= 18){
+    alert('Maior de idade');
+}else{
+    alert('Menor de idade')
+}
+</code></pre>
+                            <h2 id="guia-de-resolucao-de-erros"><a name="user-content-guia-de-resolucao-de-erros" href="#guia-de-resolucao-de-erros" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Guia de resolução de erros</h2>
+                            <p>A seguir, elencamos alguns pontos usualmente relatados durante as aulas de programação. É comum, nesse processo de introdução à uma nova linguagem de programação, os estudantes enfrentarem alguns problemas. Vale ressaltar, inicialmente, que:</p>
+                            <ul>
+                                <li>O erro, muitas vezes, não é do navegador!
+                                    <ul>
+                                        <li>Queremos que você tenha autonomia para a detecção, prevenção e correção dos seus erros.</li>
+                                    </ul>
+                                </li>
+                                <li>Anote o que é discutido e demonstrado no seu caderno ou em um documento virtual.
+                                    <ul>
+                                        <li>Vale ressaltar que este material não tem tudo que você precisa saber. Trata-se de um guia introdutório sobre JavaScript.</li>
+                                        <li>Lembre-se, a fala do professor também é material de aula. Anote!</li>
+                                    </ul>
+                                </li>
+                                <li>Não é responsabilidade do professor a integridade do seu código.
+                                    <ul>
+                                        <li>Você escreve, mantém e executa!</li>
+                                        <li>O papel do professor, em sala de aula, é mediar o conhecimento.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3 id="frase-tipicas-e-as-respostas-para-seus-problemas"><a name="user-content-frase-tipicas-e-as-respostas-para-seus-problemas" href="#frase-tipicas-e-as-respostas-para-seus-problemas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Frase típicas e as respostas para seus problemas</h3>
+                            <ul>
+                                <li><strong>Professor, o meu código não está funcionando</strong> </li>
+                            </ul>
+                            <p>O que é não funcionar? O termo funcionar é muito relativo. Nada foi executado, ou parte? A saída de dados não está de acordo com o planejado? Lembre-se: foi você quem escreveu o código. Ninguém melhor do que você para entendê-lo e corrigí-lo. </p>
+                            <p>Dessa forma recomenda-se que você faça a depuração do seu código, ou seja, reveja a execução linha a linha. Busque as instruções que provavelmente estão causando um erro e corrija o que for necessário. O próprio navegador web é capaz de indicar em qual linha do seu código o erro está sendo lançado.</p>
+                            <p>Uma outra questão importante a ser tratada é sobre a sintaxe do código escrito. Você deve conferir, constantemente, se digitou corretamente as instruções. Ex:</p>
+                            <pre><code>var x = 10;
+Alert(x); // não funciona
+</code></pre>
+                            <p>O código mostrado anteriormente não funciona, visto que o comando <strong>Alert</strong> não é reconhecido pelo navegador. O correto é utilizar o comando <strong>alert</strong>, com <strong>a</strong> minúsculo. A linguagem JavaScript sabe diferenciar letras maiúsculas de minúsculas.</p>
+                            <ul>
+                                <li><strong>Professor, ele está somando errado</strong></li>
+                            </ul>
+                            <p>Ele quem? O navegador ou você? Quase sempre, o erro é lógico, ou seja, seu! Não culpe o computador por excutar uma lógica que você projetou. Corrija a sua lógica, pois o nagevador web apenas executou o que você pediu (instruções de código). </p>
+                            <ul>
+                                <li><strong>Professor, não estou conseguindo executar meu código</strong></li>
+                            </ul>
+                            <p>Combinamos, na primeira aula, que iremos criar nossos códigos em arquivos HTML (arquivos com a extensão .html). Dessa forma, todo novo exercício a ser resolvido deve ser implementado em um novo arquivo .html com o seguinte formato:</p>
+                            <pre><code>&lt;script&gt;
+    // seu código deve estar dentro da tag &lt;script&gt;
+    // salve seu arquivo com a extensão .html no final
+&lt;/script&gt;
+</code></pre>
+                            <p>Para executar seu arquivo, você deve encontrá-lo no seu computador e acessá-lo (com dois cliques sobre o arquivo) em um navegador web. Dê preferência ao navegador Google Chrome, pois este é o navegador usado pelo professor. Se você salvar o seu arquivo com uma extensão diferente de .html, é provável que seu código não execute.</p>
+                            <h2 id="codigos-de-exemplo"><a name="user-content-codigos-de-exemplo" href="#codigos-de-exemplo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Códigos de exemplo</h2>
+                            <p><a href="https://github.com/falleiros/falleiros.github.io/tree/master/exemplos">Exemplos</a></p>
+                            <h2 id="exercicios"><a name="user-content-exercicios" href="#exercicios" class="headeranchor-link" aria-    hidden="true"><span class="headeranchor"></span></a>Exercícios</h2>
+                            <ol>
+                                <li>Faça um algoritmo que recebe como entrada de dados dois valores numéricos e exibe o resultado da soma destes dois valores.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/mky7yh25/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                                <li> Conhecendo a distancia total (em km) que um carro percorreu e a quantia (em litros) de combustível gasto durante o trajeto, crie um fluxograma que indica como saída de dados o consumo médio deste veículo (km/l).
+                                </li>
+
+                                <li>Faça um algoritmo que recebe como entrada de dados um valor numérico e informa se este valor está em um intervalo de 0 a 1000;
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/b1eb9aru/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>Elaborar um algoritmo que é capaz de converter em Real (R$) uma quantia dada em Dólar ($). Este algoritmo deve solicitar ao usuário o valor da cotação diária do Dólar.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/qwqree5s/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>Ao ler dois valores numéricos distintos, indique a diferença entre o maior e o menor valor lidos. Crie um algoritmo que representa uma possível solução para o problema.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/r78uxzL7/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>Desenvolva um algoritmo que seja capaz de encontrar o maior dentre 3 (três) números quaisquer dados como entrada de dados.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/73306h6m/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>Construa um algoritmo que recebe, como entrada de dados, o salário bruto de um funcionário e retorna, como saída de dados, o seu salário líquido. O salário líquido deve ser calculado conforme segue:
+                                    <ul>
+                                        <li>Caso o salário bruto for inferior a R$ 300,00, o salário líquido resultante corresponde ao salário bruto com o desconto de 5% em impostos. </li>
+                                        <li>Caso o salário bruto for maior ou igual a R$ 300,00, desconta-se 15% em impostos.</li>
+                                    </ul>
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/L86ktxp9/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>João Bacurí costuma pescar no pesqueiro Rio Aberto. Considere que o pesqueiro estabeleceu que, independente do tipo de peixe, cobra-se R$ 9.90 (nove reais e noventa centavos) por quilo de pescado. Faça um algoritmo que, dado o peso (em quilogramas) de pescado, é capaz de mostrar o valor final a ser cobrado com desconto. As seguintes regras de desconto são utilizadas no ato de cobrança:
+                                    <ul>
+                                        <li>O pescado que pesar até 2.9Kg não tem desconto no valor final; </li>
+                                        <li>O pescado que pesar 3Kg ou mais, ganha 5% de desconto no valor final. </li>
+                                    </ul>
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/kh3c42Le/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>Faça um algoritmo que recebe como entrada de dados a idade de uma pessoa expressa em anos, meses e dias e retorna como saída de dados a idade expressa apenas em dias. Assuma que todos os meses do ano tem 30 dias.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/rmkpaezg/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que leia o tempo de duração de um evento expresso em minutos e retorne, como saída de dados, o tempo de duração expresso em horas e minutos, no formato hh:mm (ex: 80min é equivalente à 01h:20m).
+                                    <br/>
+                                    <br/>
+                                    <blockquote>Dica: A matemática é sua amiga! Use-a, sem moderação.
+                                        <br/> <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math">Objeto Math - JavaScript</a></blockquote>
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/mvjx8dm6/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit. A fórmula de conversão é: F = (9 * C + 160) / 5, na qual F é a temperatura em Fahrenheit e C é a temperatura em Celsius.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/usr6pkns/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que leia a velocidade de um veículo em km/h e calcule e imprima a velocidade em m/s (metros por segundo).
+                                    <br/>
+                                    <br/>
+                                    <blockquote>Dica: A física é sua amiga também! Use-a, sem moderação.
+                                        <br/> <a href="http://www.sbfisica.org.br/v1/novopion/index.php/publicacoes/artigos/479-3-6">Conversão de velocidade</a></blockquote>
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/8udh3p15/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Uma empresa de vendas muito pequena tem apenas um vendedor contratado. A empresa paga, ao corretor, uma comissão calculada de acordo com o valor de suas vendas. Se o valor da venda for maior que R$ 50.000,00, a comissão será de 12% do valor vendido. Se o valor da venda do corretor estiver entre R$ 30.000,00 e R$ 50.000,00 (incluindo extremos), a comissão será de 9.5%. Em qualquer outro caso, a comissão será de 7%. Escreva um algoritmo que gere um relatório contendo o valor da venda e a comissão do corretor.
+                                    <br/>
+                                    <br/>
+                                    <blockquote>Jovem, já passou da hora de você compreender porcentagem!
+                                        <br/> <a href="http://aprovadonovestibular.com/como-calcular-porcentagem-matematica.html">Como calcular porcentagem</a></blockquote>
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/kfskosqr/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Um hotel cobra R$ 60.00 a diária e mais uma taxa de serviços. A taxa de serviços é de:
+                                    <ul>
+                                        <li>R$ 5.50 por diária, se o número de diárias for maior que 15;</li>
+                                        <li>R$ 6.00 por diária, se o número de diárias for igual a 15;</li>
+                                        <li>R$ 8.00 por diária, se o número de diárias for menor que 15.</li>
+                                    </ul>
+                                    Construa um algoritmo que mostre o nome e o total da conta de um cliente.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/eyv5nx0n/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que leia os valores N1, N2 e N3 e mostre uma mensagem que informe se a soma de N1 com N2 é menor, maior ou igual a N3.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/ass0mg7p/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    A revendedora de carros Pica-Pau Ltda. paga aos seus funcionários vendedores dois salários mínimos fixos, mais uma comissão fixa de R$ 50,00 por carro vendido e mais 5% do valor das vendas. Faça um algoritmo que determine o salário total de um vendedor.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/u1m2bbws/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Construir um algoritmo que tome como entradas três valores distintos e os apresente em ordem crescente (menor valor para o maior).
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/tp6zr5a8/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que receba, como entrada de dados, 3 valores numéricos e mostre, como saída de dados, o menor deles.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/w8n9bmgg/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que leia dois números e indique se são iguais ou se são diferentes. Mostre o maior e o menor (nesta sequência).
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/tty8o7nx/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    Faça um algoritmo que leia três números e mostre-os em ordem decrescente.
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/kgzdqo6v/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a></div>
+                                </li>
+                                <li>Crie um algoritmo que, dado três números informados pelo usuário, verifique se algum deles é múltiplo de outro. Note que pode haver mais de um múltiplo entre eles.</li>
+                                <li>Crie um algoritmo que, dados os lados de um triângulo informados pelo usuário, calcule a sua área.
+                                    <br>
+                                    <br>
+                                    <blockquote>Dica: Estudar Matemática nunca é demais! Use-a, sem moderação.
+                                        <br/> <a href="http://mundoeducacao.bol.uol.com.br/matematica/area-triangulo.htm">Área do Triângulo</a></blockquote>
+                                </li>
+                                <li>Crie um algoritmo que seja capaz de descobrir, por meio de perguntas lógicas (verdadeiro ou falso) sobre características físicas, um animal que o usuário tenha em mente. Considere os animais: pato, águia, galinha, avestruz, pinguim, morcego, ornitorrinco, leão, gato, onça pintada, baleia, tubarão, lambari, enguia e arraia.
+                                    <br>
+                                    <br>
+                                    <blockquote>Dica: Essa questão exige um pouco mais de raciocínio!
+                                        <br/> <a href="https://pt.wikipedia.org/wiki/Tabela_de_decis%C3%A3o">Tabela de decisão</a></blockquote>
+                                </li>
+
+                                <li>Faça um algoritmo que, dado o valor total em reais e o número de prestações desejadas, calcule o valor de cada prestação. O número mínimo de prestações deve ser 12. Se o número de prestações for maior ou igual a 24, adicione 10% de juros ao valor total, se for maior ou igual a 36, adicione 15% de juros ao valor total.</li>
+
+                                <li><strong>Questão de avaliacão da Turma B: </strong>Na escola Caminho Feliz, as médias dos alunos são divulgadas no formato de conceito, de acordo com a seguinte tabela:
+
+                                    <ul>
+                                        <li>Nota de 0.0 até 3.9: conceito E</li>
+                                        <li>Nota de 4.0 até 6.9: conceito D</li>
+                                        <li>Nota de 7.0 até 7.9: conceito C</li>
+                                        <li>Nota de 8.0 até 8.9: conceito B</li>
+                                        <li>Nota de 9.0 até 10.0: conceito A</li>
+                                    </ul>
+
+                                    <p>Implemente um algoritmo que recebe, como entrada de dados, a nota obtida pelo estudante e   indica, como saída de dados, o conceito obtido pelo estudante. Observação: considerar apenas uma casa decimal para a representação das notas dos estudantes.</p>
+
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/yjk9oryh/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <strong>Questão de avaliacão da Turma B: </strong> A febre sempre deixa os pais preocupados. Entretanto, é importante lembrar que trata-se de um processo comum, que vai se repetir muitas vezes na vida de uma criança. Analise a seguinte tabela com a classificação de febre infantil:
+
+                                    <ul>
+                                        <li>Temperatura acima dos 37.5 graus Celsius: estado febril</li>
+                                        <li>Temperatura entre 37 e 37.5 graus Celsius: estado subfebril</li>
+                                        <li>Temperatura abaixo de 37 graus Celsius: estado normal</li>
+                                    </ul>
+                                    <p>Implemente um algoritmo que recebe, como entrada de dados, a temperatura da criança e indica se ela está em estado febril, subfebril ou normal.</p>
+
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/gv7r726t/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <strong>Questão de avaliacão da Turma B: </strong>Implemente um algoritmo capaz para determinar se um número A é divisível por um outro número B. Esses valores devem ser fornecidos pelo usuário como entrada de dados.
+
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/utxoaqtr/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                                <li><strong>Questão de avaliacão da Turma A: </strong>Na Auto-escola Pé de Chumbo, os estudantes aspirantes a motoristas passam por uma série de simulados antes de realizarem o exame final. Nesses simulados, os estudantes são classificados de acordo com a tabela a seguir:
+
+
+                                    <ul>
+                                        <li>Nota de 0.0 até 2.9: desempenho péssimo</li>
+                                        <li>Nota de 3.0 até 4.9: desempenho ruim</li>
+                                        <li>Nota de 5.0 até 6.9: desempenho regular</li>
+                                        <li>Nota de 7.0 até 8.9: desempenho bom</li>
+                                        <li>Nota de 9.0 até 10.0: desempenho ótimo</li>
+                                    </ul>
+
+                                    <p>Implemente um algoritmo que recebe, como entrada de dados, a nota obtida pelo estudante e   indica, como saída de dados, o desempenho do estudante. Observação: considerar apenas uma casa decimal para a representação das notas dos estudantes.</p>
+
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/1mdjpvhL/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <strong>Questão de avaliacão da Turma A: </strong>Implemente um algoritmo que, dada a idade de uma pessoa, é capaz de determinar sua classificação segundo a seguinte tabela:
+
+                                    <ul>
+                                        <li>Menor de 18 anos: menor de idade</li>
+                                        <li>Acima de 18 anos e menor de 60 anos: maior de idade</li>
+                                        <li>Idade superior ou igual a 60 anos: idoso</li>
+                                    </ul>
+
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/yLry7hgo/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                                <li><strong>Questão de avaliacão da Turma A: </strong>Implemente um algoritmo capaz para determinar se um número A é positivo, negativo ou neutro.
+
+                                    <div>
+                                        <iframe width="100%" height="300" src="//jsfiddle.net/du6nw5zo/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><a href="#" class="_hide">Mostrar resolução</a>
+                                    </div>
+                                </li>
+
+                            </ol>
+
+                            <br>
+                            <hr>
+
+                            <div>
+                                <h4>Lista de exercícios adicional</h4>
+                                <a target="_blank" href="./pdf/lista-extra.pdf">Estrutura Condicional</a>
+                            </div>
+                            <br>
+                            <hr>
+
+                            <div id="leitura">
+                                <h2>Livros para leitura</h2>
+
+                                <ul>
+                                    <li><a href="https://github.com/cezaraugusto/You-Dont-Know-JS">You don't know JS (traduzido)</a></li>
+                                    <li><a href="https://leanpub.com/javascriptfurtivo/read">JavaScript Furtivo</a></li>
+                                    <li><a href="https://github.com/braziljs/eloquente-javascript">Eloquent JavaScript (traduzido)</a></li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <hr>
+
+                            <div id="trabalhos">
+                                <h2>Trabalhos</h2>
+
+                                <h3>FDWAI</h3>
+
+                                <p>
+                                  Descreva (relate) as atividades que você desenvolveu durante o processo de concepção da marca Gamefica, atentando-se para as seguintes questões:
+
+                                  <ol>
+                                    <li>Em quais ações você sentiu-se mais empenhado?</li>
+                                    <li>Quais foram as experiências positivas que você vivenciou no trabalho em grupo?</li>
+                                    <li>Quais foram as experiências negativas que você vivenciou no trabalho em grupo?</li>
+                                    <li>Quanto você contribuiu para o processo de concepção do logotipo de Gamefica?</li>
+                                    <li>Quais foram as dificuldades que você enfrentou na ferramenta de desenho Adobe Illustrator CC?</li>
+                                    <li>Quais marcas você usou como base de inspiração?</li>
+                                  </ol>
+
+                                  Cada uma de suas respostas deve ter, no mínimo, 5 linhas. Respondam às questões e reestruturem suas respostas em um texto,
+                                  fazendo as devidas adequações, conforme a tabela de conectivos e as aulas de coesão e coerência da Prof<sup>a</sup> Karina.
+                                  Vocês deverão criar, para tal, um documento no Google Drive e compartilhá-lo com os e-mails <em>evandro.falleiros@ifms.edu.br</em>
+                                  e <em>karina.vicelli@ifms.edu.br</em>. Suas respostas serão avaliadas em ambas disciplinas.
+
+                                  <br><br>
+                                  <div>
+                                    <strong>Prazo: </strong> <span>28 de Setembro de 2016 (Quarta-Feira, até 23:59min)</span>
+                                  </div>
+
+                                  <div>
+                                    <h4>Materiais de apoio</h4>
+
+                                    <ul>
+                                      <li><a href="https://drive.google.com/a/ifms.edu.br/file/d/0B8bI8UmNC3GfX1hCd3RUcHVWUlk/view?usp=drive_web">ABNT comunicacaotecnicanormas_trabalhos_utfpr.pdf</a></li>
+                                      <li><a href="https://drive.google.com/a/ifms.edu.br/file/d/0B8bI8UmNC3GfODJfeDBlTTJwdTg/view?usp=drive_web">Tabela-de-conectivos1.png</a></li>
+                                      <li><a href="https://drive.google.com/a/ifms.edu.br/file/d/0B8bI8UmNC3GfdWhaYjlXeXBqYTg/view?usp=drive_web">dica_sobre_a_redacao_cientifica.pdf</a></li>
+                                    </ul>
+                                  </div>
+
+
+                                </p>
+
+
+                            </div>
+
+                            <br>
+                            <hr>
+
+                            <div id="arquivos">
+
+                                <h2>Arquivos para a disciplina Ferramentas de Desenho 2</h2>
+
+                                <ul>
+                                    <li>
+                                        <a href="img/chibi.jpg">Chibi - Vetorização</a>
+                                    </li>
+                                </ul>
+
+                                <h2>Arquivos para a disciplina Ferramentas de Desenho 1</h2>
+                                <ul>
+                                    <li>
+                                        Atividade - Lápis
+
+                                        <ul>
+                                            <li><a target="_blank" href="img/lapis-aula3-novo.jpg">Imagem</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        Atividade - Escritório
+                                        <ul>
+                                            <li><a target="_blank" href="img/atividade2.jpg">Imagem</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        Atividade - Escolar
+                                        <ul>
+                                            <li><a target="_blank" href="img/atividade3.jpg">Imagem</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        Atividade - Icones
+                                        <ul>
+                                            <li><a target="_blank" href="img/icons2.jpg">Lista de ícones 1</a></li>
+                                            <li><a target="_blank" href="img/icons1.png">Liste de ícones 2</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        Atividade - Bicicleta
+                                        <ul>
+                                            <li><a target="_blank" href="http://previews.123rf.com/images/ominaesi/ominaesi1405/ominaesi140500028/28461558-Viaggi-Salute-Simbolo-della-bicicletta-Modern-Flat-Template-Design-Archivio-Fotografico.jpg">Bicicleta</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- <li>
+                                        Atividade para treino
+                                        <ul>
+                                            <li><a target="_blank" href="img/cuecas-herois.jpg">Imagem</a></li>
+                                            <li><a target="_blank" href="http://www.dafont.com/pt/bebas-neue.font">Fonte Bebas Neue</a></li>
+                                        </ul>
+                                    </li>
+                                    <hr>
+                                    <li><a href="https://i.ytimg.com/vi/WM6ew5-nP5Q/maxresdefault.jpg">Atividade Avaliativa Turma A</a></li>
+                                    <li><a target="_blank" href="img/mike.jpg">Avaliação 1 Turma A - Imagem 1</a></li>
+                                    <li><a target="_blank" href="img/minions.jpg">Avaliação 1 Turma A - Imagem 2</a></li>
+                                    <li><a target="_blank" href="img/casa.jpg">Avaliação 2 Turma A</a></li>
+
+                                    <hr>
+
+                                    <li><a target="_blank" href="img/atividade-avaliativa.jpg">Atividade Avaliativa Turma B</a></li>
+                                    <li><a target="_blank" href="img/av1.jpg">Avaliação 1 Turma B - Imagem 1</a></li>
+                                    <li><a target="_blank" href="img/av2.jpg">Avaliação 1 Turma B - Imagem 2</a></li>
+                                    <li><a target="_blank" href="img/mike.jpg">Avaliação 2 Turma B</a></li>
+
+                                    <hr>
+
+                                    <li><a target="_blank" href="img/av2chamada.jpg">Avaliação de Segunda Chamada</a></li> -->
+                                </ul>
+
+                                <br>
+                                <hr>
+
+                                <h2>Arquivos para a disciplina Fund. de Lógica e Programação de Computadores</h2>
+
+                                <ul>
+                                    <li>
+                                        <a href="pdf/AV_REC_ALGORITMOS.pdf">Avaliação de Recuperação</a>
+                                    </li>
+                                </ul>
+
+                                <hr>
+
+                                <h2 id="fund-design">Arquivos para a disciplina Fund. para o Design Web e Arquitetura da Informação</h2>
+
+                                <ul>
+                                    <li>
+                                        <a href="pdf/design_para_quem_nao_e_designer.pdf" target="_blank">Livro - Design para quem não é Designer - Noções básicas de planejamento visual</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            <br>
+                            <hr>
+
+                            <div id="avaliacoes">
+                              <h2>Avaliações</h2>
+
+                              <h3>Ferramentas de Desenho 1</h3>
+                              <ul>
+
+                                <!--<li>Ilustrações - Avaliação de recuperação (P1 e P2)
+                                  <ul>
+                                    <li><a href="img/casa.jpg">Ilustração - Casa</a></li>
+                                    <li><a href="http://previews.123rf.com/images/cowpland/cowpland1503/cowpland150300004/37369173-Rocket-launch-Flat-design-vector-illustration-isolated-on-white-background-Stock-Vector.jpg">Carlos</a></li>
+                                  </ul>
+                                </li>-->
+
+                                <li>Ilustrações - Avaliação de recuperação (P3 e P4)
+                                  <ul>
+                                    <li><a href="http://www.protiumdesign.com/wp-content/uploads/2015/06/Flat-Mountains-Landscape_1024.jpg">Ilustração - Paisagem (1024x576)</a>
+                                        <ul>
+                                            <li>Todos os objetos devem ser agrupados e nomeados</li>
+                                            <li>Objetos compostos por mais de uma figura geométrica (Ex: núvens) devem ser unidos utilizando o menu de opções PathFinder</li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+
+                                <!--<li>Ilustrações - Avaliação 1 do Primeiro Bimestre
+                                  <ul>
+                                    <li><a href="img/fd1-p1/img1.jpg">Ilustração 1</a></li>
+                                    <li><a href="img/fd1-p1/img2.jpg">Ilustração 2</a></li>
+                                  </ul>
+                                </li>-->
+<!--
+                                <li>Ilustrações - Avaliação 1 do Primeiro Bimestre Segunda Chamada
+                                  <ul>
+                                    <li><a href="https://image.freepik.com/free-vector/desktop-objects-in-flat-design_62147505503.jpg">Ilustração 1</a></li>
+                                  </ul>
+                                </li>
+
+                                <li>Ilustrações - Avaliação 2 do Primeiro Bimestre
+                                  <ul>
+                                    <li><a href="img/fd1-p2/img.jpg">Ilustração 1</a></li>
+                                  </ul>
+                                </li>
+
+                                <li>Ilustração - Avaliação 1 do Segundo Bimestre
+                                  <ul>
+                                    <li><a href="img/fd1-p3/rocket.png">Foguete (800 x 800)</a></li>
+                                  </ul>
+                                </li>
+                                
+                                <li>Ilustração - Avaliação 2 do Segundo Bimestre
+                                  <ul>
+                                    <li><a target="_blank" href="img/av1.jpg">Imagem 1 (752 x 648)</a></li>
+                                    <li><a target="_blank" href="img/av2.jpg">Imagem 2 (752 x 648)</a></li>
+                                  </ul>
+                                </li>-->
+
+                              </ul>
+
+                              <h3>Ferramentas de Desenho 2</h3>
+
+                              <!--<h4>Avaliação 1</h4>
+
+                              <ul>
+                                <li>Turma A - Ilustrações para a Avaliação 1 do Primeiro Bimestre (Créditos: <a href="http://www.alexpasquarella.com/">Alex Pasquarella</a>)
+                                  <ul>
+                                    <li><a href="img/fd2-p1/img5.png">Ilustração 1</a></li>
+                                    <li><a href="img/fd2-p1/img6.png">Ilustração 2</a></li>
+                                    <li><a href="img/fd2-p1/img7.png">Ilustração 3</a></li>
+                                  </ul>
+                                </li>
+
+                                <li>Turma B - Ilustrações para a Avaliação 1 do Primeiro Bimestre (Créditos: <a href="http://www.alexpasquarella.com/">Alex Pasquarella</a>)
+                                  <ul>
+                                    <li><a href="img/fd2-p1/img1.png">Ilustração 1</a></li>
+                                    <li><a href="img/fd2-p1/img2.png">Ilustração 2</a></li>
+                                    <li><a href="img/fd2-p1/img3.png">Ilustração 3</a></li>
+                                    <li><a href="img/fd2-p1/img4.png">Ilustração 4</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <h4>Avaliação 2</h4>
+
+                              <ul>
+                                <li>Turma A - Ilustrações para a Avaliação 2 do Primeiro Bimestre (Créditos: <a href="https://www.behance.net/gallery/35842865/Google-Allo-Sticker-Set">Burnt Toast Creative</a>)
+                                  <ul>
+                                    <li><a href="img/fd2-p2/img2.jpg">Ilustração 1 (1280 X 800)</a></li>
+                                    <li><a href="img/fd2-p2/img3.jpg">Ilustração 2 (1280 X 800)</a></li>
+                                  </ul>
+                                </li>
+
+                                <li>Turma B - Ilustrações para a Avaliação 2 do Primeiro Bimestre (Créditos: <a href="https://www.behance.net/gallery/35842865/Google-Allo-Sticker-Set">Burnt Toast Creative</a>)
+                                  <ul>
+                                    <li><a href="img/fd2-p2/img1.jpg">Ilustração 1 (1280 X 800)</a></li>
+                                    <li><a href="img/fd2-p2/img4.jpg">Ilustração 2 (1280 X 800)</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <h4>Avaliação 3</h4>
+
+                              <ul>                               
+                                <li>Turma A - Ilustrações para a Avaliação 1 do Segundo Bimestre
+                                  <ul>
+                                    <li><a target="_blank" href="img/fd2-p3/wireframe-mockup.png">Avaliação</a></li>
+                                    <li><a target="_blank" href="img/fd2-p3/1.jpeg">Foto</a></li>
+                                  </ul>
+                                </li>
+                                <li>Turma B - Ilustrações para a Avaliação 1 do Segundo Bimestre
+                                  <ul>
+                                    <li><a target="_blank" href="img/fd2-p3/wireframe-mockup.png">Avaliação</a></li>
+                                    <li><a target="_blank" href="img/fd2-p3/1.jpeg">Foto</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            -->
+                              <!--<h4>Avaliação 4</h4>
+
+                              <ul>      
+
+                                <li>Turma A - Ilustrações para a Avaliação 2 do Segundo Bimestre
+                                  <ul>
+                                    <li><a target="_blank" href="http://fridayillustrated.com/wp-content/uploads/2015/03/Featured-project-Icon-a-Day-with-Marko-Stupic-travel.png">Imagem 1</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/50fad085e2fbd82804108b764459f268/tumblr_ngh6cm7sN31qdt6e2o2_1280.png">Imagem 2</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/533caa80280171e0a9db1c2ef105add1/tumblr_ngh6cm7sN31qdt6e2o3_1280.png">Imagem 3</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/c92676ef6617427473b39a619a956ca2/tumblr_ngh6cm7sN31qdt6e2o4_1280.png">Imagem 4</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/d68d8f2712451b719113ec88c33b8478/tumblr_ngh6cm7sN31qdt6e2o8_1280.png">Imagem 5</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/759c53d23602d2ee9c285559efaae957/tumblr_ngh6cm7sN31qdt6e2o7_1280.png">Imagem 6</a></li>
+                                    <li><a target="_blank" href="http://66.media.tumblr.com/ee59625e688fa3545db15b39f4162c8c/tumblr_ndv0schN9J1r5vojso6_1280.png">Imagem 7</a></li>
+                                    <li><a target="_blank" href="https://www.klonblog.com/images/2015/01/snygo_files-005-iconaday-630x473.jpg">Imagem 8</a></li>
+                                  </ul>
+                                </li>                         
+                                
+                                <li>Turma B - Ilustrações para a Avaliação 2 do Segundo Bimestre
+                                  <ul>
+                                    <li><a target="_blank" href="http://fridayillustrated.com/wp-content/uploads/2015/03/Featured-project-Icon-a-Day-with-Marko-Stupic-travel.png">Imagem 1</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/50fad085e2fbd82804108b764459f268/tumblr_ngh6cm7sN31qdt6e2o2_1280.png">Imagem 2</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/533caa80280171e0a9db1c2ef105add1/tumblr_ngh6cm7sN31qdt6e2o3_1280.png">Imagem 3</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/c92676ef6617427473b39a619a956ca2/tumblr_ngh6cm7sN31qdt6e2o4_1280.png">Imagem 4</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/d68d8f2712451b719113ec88c33b8478/tumblr_ngh6cm7sN31qdt6e2o8_1280.png">Imagem 5</a></li>
+                                    <li><a target="_blank" href="http://68.media.tumblr.com/759c53d23602d2ee9c285559efaae957/tumblr_ngh6cm7sN31qdt6e2o7_1280.png">Imagem 6</a></li>
+                                    <li><a target="_blank" href="http://66.media.tumblr.com/ee59625e688fa3545db15b39f4162c8c/tumblr_ndv0schN9J1r5vojso6_1280.png">Imagem 7</a></li>
+                                    <li><a target="_blank" href="https://www.klonblog.com/images/2015/01/snygo_files-005-iconaday-630x473.jpg">Imagem 8</a></li>
+                                  </ul>
+                                </li>
+                              </ul>-->
+
+                            <!--<h4>Avaliação de Recuperação 1 - Vetorização</h4>
+
+                            <ul>
+                                <li> Turma A
+                                    <ul>
+                                        <li><a href="img/recup-fd2/bart3.gif">Bart Simpson - Imagem 1</a></li>
+                                        <li><a href="img/recup-fd2/bart4.png">Bart Simpson - Imagem 2</a></li>
+                                    </ul>
+                                </li>
+                                <li> Turma B
+                                    <ul>
+                                        <li><a href="img/recup-fd2/bart1.png">Bart Simpson - Imagem 1</a></li>
+                                        <li><a href="img/recup-fd2/bart2.gif">Bart Simpson - Imagem 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+
+                            <h4>Avaliação de Recuperação 2 - Mockups</h4>
+
+                            <ul>
+                                <li> Turma A e Turma B
+                                    <ul>
+                                        <li><a href="http://www.webdesigndev.com/wp-content/uploads/2016/03/Dental-Application.jpg">Mockup 1</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            </div>
+                            <br>
+                            <hr>
+
+                            <div id="notas">
+                                <h2>Notas</h2>
+                                <section>
+                                    <h3>INFO 1</h3>
+                                    <section>
+                                        <h4>Ferramentas de Desenho 1</h4>
+
+                                        <ul>
+                                          <!-- <li><a href="notas/fd1/info1.html">Avaliação 1 do Primeiro Bimestre</a></li> -->
+                                          <li><a target="_blank" href="pdf/notas-info1a-fd1-p2.pdf">Médias do Primeiro Bimestre (sem notas de recuperação)</a></li>
+                                        </ul>
+                                    </section>
+
+                                    <section>
+                                        <h4>Fund. de Lógica e Programação de Computadores 1</h4>
+
+                                        <ul>
+                                          <!-- <li><a href="notas/flpc1/info1.html">Avaliação 1 do Primeiro Bimestre</a></li> -->
+                                          <li><a target="_blank" href="pdf/notas-info1a-flpc1-p2.pdf">Médias do Primeiro Bimestre (sem notas de recuperação)</a></li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <hr>
+                                <section>
+                                    <h3>INFO 2 - Turma A</h3>
+                                    <section>
+                                        <h4>Ferramentas de Desenho 2</h4>
+                                        <!-- <a href="notas/fd2/a.html">Avaliação 1 do Primeiro Bimestre</a> -->
+                                        <ul>
+                                          <li><a target="_blank" href="pdf/notas-info2a-fd2-p2.pdf">Médias do Primeiro Bimestre (sem notas de recuperação)</a></li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <hr>
+                                <section>
+                                    <h3>INFO 2 - Turma B</h3>
+                                    <section>
+                                        <h4>Ferramentas de Desenho 2</h4>
+                                        <!-- <a href="notas/fd2/b.html">Avaliação 1 do Primeiro Bimestre</a> -->
+                                        <ul>
+                                          <li><a target="_blank" href="pdf/notas-info2b-fd2-p2.pdf">Médias do Primeiro Bimestre (sem notas de recuperação)</a></li>
+                                        </ul>
+                                    </section>
+                                </section>
+
+                                <br><br><br><hr>
+                            </div>
+                            <!-- <br>
+                            <hr>
+                            <div id="datas">
+                                <h2>Datas importantes</h2>
+                                <section>
+                                    <h3>Turma A</h3>
+                                    <section>
+                                        <h4>Ferramentas de Desenho</h4>
+                                        <ul>
+                                            <li><strike>Avaliação 1: 23/06/2016 (horário normal de aula)</strike></li>
+                                            <li>Avaliação 2: 30/06/2016 (horário normal de aula)</li>
+                                            <li><strike>Recuperação: 16/06/2016 (horário normal de aula)</strike></li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <h4>Fundamentos de Lógica e Programação de Computadores</h4>
+                                        <ul>
+                                            <li><strike>Avaliação 1: 13/06/2016 (das 07:00 às 08:30)</strike></li>
+                                            <li>Avaliação 2: 28/06/2016 (das 07:00 às 09:15)</li>
+                                            <li>Recuperação: a definir</li>
+                                        </ul>
+                                    </section>
+                                </section>
+
+                                <hr>
+
+                                <section>
+                                    <h3>Turma B</h3>
+                                    <section>
+                                        <h4>Ferramentas de Desenho</h4>
+                                        <ul>
+                                            <li><strike>Avaliação 1: 08/06/2016 (horário normal de aula)</strike></li>
+                                            <li>Avaliação 2: 29/06/2016 (horário normal de aula)</li>
+                                            <li><strike>Recuperação: 15/06/2016 (horário normal de aula)</strike></li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <h4>Fundamentos de Lógica e Programação de Computadores</h4>
+                                        <ul>
+                                            <li><strike>Avaliação 1: 14/06/2016 (horário normal de aula)</strike></li>
+                                            <li>Avaliação 2: 28/06/2016 (horário normal de aula)</li>
+                                            <li>Recuperação: 30/06/2016 (às 14:00)</li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div> -->
+                            <p><strong>Fonte:</strong> <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A reintroduction to JavaScript</a></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var _hideElements = document.querySelectorAll('._hide');
+
+    var btnClick = function(evt) {
+        evt.preventDefault();
+
+        var iframe = evt.target.parentNode.querySelector('iframe');
+        var display = window.getComputedStyle(iframe).display
+
+        if (display != 'none') {
+            iframe.style.display = 'none';
+            evt.target.innerHTML = 'Mostrar resolução';
+        } else {
+            iframe.style.display = 'inline';
+            evt.target.innerHTML = 'Fechar resolução';
+        }
+    };
+
+    for (var key in _hideElements) {
+        // skip loop if the property is from prototype
+        if (!_hideElements.hasOwnProperty(key)) continue;
+
+        var btn = _hideElements[key];
+
+        btn.addEventListener('click', btnClick);
+    }
+    </script>
+</body>
+
+</html>
